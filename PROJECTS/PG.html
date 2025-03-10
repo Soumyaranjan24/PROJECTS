@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apna PG - Find Your Perfect Stay</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Loader -->
+  <div id="loader" class="loader-container">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <h1>Apna PG</h1>
+    <button id="toggle-theme" class="theme-button">🌞</button>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Search Section -->
+    <section class="search-container">
+      <div class="search-form">
+        <input type="text" id="location-input" class="search-input" placeholder="Enter location">
+        <select id="gender-filter" class="filter-select">
+          <option value="">Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="unisex">Unisex</option>
+        </select>
+        <select id="price-filter" class="filter-select">
+          <option value="">Price Range</option>
+          <option value="0-5000">₹0 - ₹5,000</option>
+          <option value="5000-10000">₹5,000 - ₹10,000</option>
+          <option value="10000+">₹10,000+</option>
+        </select>
+        <select id="amenities-filter" class="filter-select">
+          <option value="">Amenities</option>
+          <option value="Wi-Fi">Wi-Fi</option>
+          <option value="AC">AC</option>
+          <option value="Food">Food Included</option>
+        </select>
+        <button id="search-button" class="search-button">Search</button>
+      </div>
+    </section>
+
+    <!-- Listings Section -->
+    <section class="listings" id="listings-container">
+      <!-- Dynamic PG Listings will be rendered here -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Apna PG. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>

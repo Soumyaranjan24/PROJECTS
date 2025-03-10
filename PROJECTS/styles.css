@@ -1,0 +1,268 @@
+/* BASE VARIABLES */
+:root {
+  --font-family: 'Poppins', sans-serif;
+  --border-radius: 12px;
+  --transition: all 0.3s ease;
+  --spacing: 1rem;
+
+  /* Light Theme Colors */
+  --color-bg-light: #f9fafb;
+  --color-card-light: #ffffff;
+  --color-text-light: #111827;
+  --color-muted-light: #6b7280;
+  --color-border-light: #e5e7eb;
+  --color-primary-light: #3b82f6;
+
+  /* Dark Theme Colors */
+  --color-bg-dark: #0f172a;
+  --color-card-dark: #1e293b;
+  --color-text-dark: #f1f5f9;
+  --color-muted-dark: #94a3b8;
+  --color-border-dark: #334155;
+  --color-primary-dark: #60a5fa;
+}
+
+/* BODY */
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg-light);
+  color: var(--color-text-light);
+  transition: var(--transition);
+}
+
+body.dark-theme {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+}
+
+/* HEADER */
+header {
+  background-color: var(--color-card-light);
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--color-border-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: var(--transition);
+}
+
+body.dark-theme header {
+  background-color: var(--color-card-dark);
+  border-color: var(--color-border-dark);
+}
+
+header h1 {
+  font-size: 1.75rem;
+}
+
+.theme-button {
+  background-color: var(--color-primary-light);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.theme-button:hover {
+  background-color: #2563eb;
+}
+
+body.dark-theme .theme-button {
+  background-color: var(--color-primary-dark);
+}
+
+body.dark-theme .theme-button:hover {
+  background-color: #3b82f6;
+}
+
+/* SEARCH SECTION */
+.search-container {
+  background-color: var(--color-card-light);
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  width: 90%;
+  max-width: 1000px;
+  transition: var(--transition);
+}
+
+body.dark-theme .search-container {
+  background-color: var(--color-card-dark);
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing);
+}
+
+.search-input,
+.filter-select,
+.search-button {
+  flex: 1 1 200px;
+  padding: 0.75rem 1rem;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  border: 1px solid var(--color-border-light);
+  transition: var(--transition);
+}
+
+body.dark-theme .search-input,
+body.dark-theme .filter-select {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+  border-color: var(--color-border-dark);
+}
+
+.search-button {
+  background-color: var(--color-primary-light);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #2563eb;
+}
+
+body.dark-theme .search-button {
+  background-color: var(--color-primary-dark);
+}
+
+body.dark-theme .search-button:hover {
+  background-color: #3b82f6;
+}
+
+/* LISTINGS */
+.listings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing);
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.listing-card {
+  background-color: var(--color-card-light);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--border-radius);
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+body.dark-theme .listing-card {
+  background-color: var(--color-card-dark);
+  border-color: var(--color-border-dark);
+}
+
+.listing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.listing-image {
+  position: relative; /* KEY FIX for gender-badge positioning */
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* GENDER BADGE */
+.gender-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--color-primary-light);
+  color: #fff;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+}
+
+body.dark-theme .gender-badge {
+  background-color: var(--color-primary-dark);
+}
+
+/* DETAILS */
+.listing-details {
+  padding: 1rem;
+}
+
+.listing-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.listing-price {
+  color: var(--color-primary-light);
+  font-weight: 600;
+}
+
+body.dark-theme .listing-price {
+  color: var(--color-primary-dark);
+}
+
+.listing-location {
+  font-size: 0.875rem;
+  color: var(--color-muted-light);
+}
+
+body.dark-theme .listing-location {
+  color: var(--color-muted-dark);
+}
+
+.listing-amenities {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.listing-amenities span {
+  background-color: var(--color-bg-light);
+  color: var(--color-text-light);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border-light);
+}
+
+body.dark-theme .listing-amenities span {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+  border-color: var(--color-border-dark);
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--color-card-light);
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--color-muted-light);
+  border-top: 1px solid var(--color-border-light);
+}
+
+body.dark-theme footer {
+  background-color: var(--color-card-dark);
+  color: var(--color-muted-dark);
+  border-color: var(--color-border-dark);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .search-form {
+    flex-direction: column;
+  }
+
+  .listing-card {
+    width: 100%;
+  }
+}
