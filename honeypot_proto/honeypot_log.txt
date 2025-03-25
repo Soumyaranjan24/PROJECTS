@@ -1,0 +1,30 @@
+Time: 2025-03-18 16:05:27.972437
+IP Address: 127.0.0.1
+Email Provided: spammer@example.com
+Password Provided: hyhy
+Message: eththrt
+--------------------------------------------------
+Time: 2025-03-18 16:14:49.802650
+IP Address: 127.0.0.1
+Email Provided: rhreh
+Password Provided: rehrh
+Message: rehrwjewrh
+--------------------------------------------------
+Time: 2025-03-25 12:36:24.020877
+IP Address: 127.0.0.1
+Email Provided: t43yt3
+Password Provided: t34t34y
+Message: t2yt23y2
+--------------------------------------------------
+Time: 2025-03-25 12:39:30.399859
+IP Address: 127.0.0.1
+Email Provided: ewgrwehw
+Password Provided: wwrh
+Message: wegweg
+--------------------------------------------------
+Time: 2025-03-25 13:00:22.403320
+IP Address: 127.0.0.1
+Email Provided: akshat.kayasth@gmail.com
+Password Provided: 123456
+Message: hello
+--------------------------------------------------
